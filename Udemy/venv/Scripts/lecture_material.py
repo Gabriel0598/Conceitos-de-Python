@@ -157,6 +157,7 @@ print("\"Do or do not. There is no try.\"")
 print("All escape sequences contain a \\.")
 # \ escapes help to avoid confusion between ' and "
 
+'''
 name = input("Please enter your name: ") # Data get in
 print("Your name is " + name + ".")
 print(type(name))
@@ -173,4 +174,115 @@ print(type(user_int))
 user_float = float(input("Plase enter a float. "))
 print(user_float)
 print(type(user_float))
+'''
 
+print("this")
+print("is")
+print("an")
+print("example")
+print("this")
+print("is")
+print("an")
+print("example")
+print("this")
+print("is")
+print("an")
+print("example")
+
+def prints_four():
+    print("this")
+    print("is")
+    print("an")
+    print("example")
+
+prints_four()
+prints_four()
+prints_four()
+prints_four()
+prints_four()
+
+# def = functions (is possible store string or numbers here)
+# context = defined by indented
+def function_name(parameter):
+    print(parameter + 2)
+function_name(8)
+# Result is 10, because the function received number 8 like a parameter
+
+first_str = "The number "
+def function_2(p1, p2, p3):
+    print(p1 + str(p2) + p3)
+
+function_2(first_str, 5, " is an integer.")
+# called like arguments in parameter
+
+def default_example(num1=7, num2=8):
+    # print(num1 * num2)
+    print (num1 * num2)
+'''
+# default_example(2)
+# product = default_example(2)
+print(default_example() + 44)
+'''
+# import generic
+import random
+# call two integers between 1 and 10:
+print(random.randint(1, 10))
+
+# function import (import like a module)
+from random import randint
+print(randint(10, 20))
+
+# universal import
+from random import *
+# return float number between 0.0 and 1.0
+print(random())
+
+# Variable scope
+# global (outside functions) and local scope (inside functions)
+example_4 = "Hello World" # global
+
+def loc_ex():
+    example_4 = "This is a string" # local
+    return example_4
+
+print(example_4)
+print(loc_ex())
+
+def loc_ex2():
+    breakfast = "Waffles"
+    return breakfast
+
+loc_ex2()
+# print(breakfast) # is not defined
+
+def print_glob():
+    loc_var = " that is very long."
+    print(glob_var + loc_var)
+
+glob_var = "This is a string example"
+print_glob()
+# Don't have order to access the data (logical order of algorithm)
+
+def first():
+    loc = 2
+    return loc
+
+def second():
+    return # loc()
+
+first()
+second()  # Don't return loc
+
+def loc_ex1():
+    global fruit  # called global variable for inside function and define it
+    fruit = "pear"
+    print(fruit)
+
+def loc_ex2():
+    fruit = "banana"
+    print(fruit)
+
+fruit = "apple"
+loc_ex1()
+loc_ex2()
+print(fruit)
