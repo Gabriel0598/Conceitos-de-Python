@@ -286,3 +286,60 @@ fruit = "apple"
 loc_ex1()
 loc_ex2()
 print(fruit)
+
+# Comparison Operators: >, <, >=, <=, !=, ==
+print(4 > 2)
+print(1 > 3)
+print(5.79 < 6)
+print(3 < 3)
+print(9 >= 9)
+print(1 <= 2)
+print(10 != 100)
+print(10 != 10)
+print(10 == 100)
+print(10 == 10)
+print("Hello" == "Hello")
+print("Hello" != "World")
+print("Hello" == "hello") # Case sensitive
+print(4.0 >= 4)
+print(4.0 <= 4)
+print(4.0 == 4)
+# = (attribution) vs == (equal) / and, or, not
+
+print(4 > 1 or "word" == "word")
+print(8.76 == 8.7600 or 2 != 2)
+print("earth" == "Earth" or 6 <= 3)
+print(10 == 5 or 10 != 5)
+
+print(not 6482 > 0)
+print(not "Python" != "Python")
+"""
+# if Statements
+veg = input("Type the name of a vegetable: ")
+if veg == "corn":
+    print("The vegetable is corn.")
+else:
+    print("The vegetable is not corn.")
+"""
+# nested
+gpa = float(input("What was the applicant's grade point average? "))
+inst_app = input("Is the student going to be educated at an approved institution? ")
+
+if gpa >= 3.7:
+    if inst_app == "yes":
+        print("The applicant qualifies for a low APR student loan.")
+    else:
+        print("The applicant does not qualify since they have not been accepted into an approved institution.")
+else:
+    print("The applicant did not have high enough grades to qualify.")
+
+user_num = int(input("Please enter an integer: "))
+
+if user_num < 0:
+    print("The number you entered is less than 0.")
+elif user_num == 0:
+    print("The number you entered is 0.")
+elif 0 < user_num <= 100:
+    print("The number you entered can be 1, 100, or anything in between.")
+else:
+    print("The number you entered is greater than 100.")
