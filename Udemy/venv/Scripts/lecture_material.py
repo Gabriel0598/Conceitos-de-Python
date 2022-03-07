@@ -321,6 +321,8 @@ if veg == "corn":
 else:
     print("The vegetable is not corn.")
 """
+
+"""
 # nested
 gpa = float(input("What was the applicant's grade point average? "))
 inst_app = input("Is the student going to be educated at an approved institution? ")
@@ -343,3 +345,127 @@ elif 0 < user_num <= 100:
     print("The number you entered can be 1, 100, or anything in between.")
 else:
     print("The number you entered is greater than 100.")
+"""
+"""
+# Truthy and falsey values
+strings_example = input("Enter any string other than an empty one: ")
+
+if strings_example != "":
+    print("Thank you for entering something.")
+else:
+    print("You did not enter a string.")
+"""
+# bool if is different than 0, so it's true.
+print(bool(0))
+print(bool(400))
+print(bool(0.0))
+print(bool(3.14159))
+print(bool(""))
+print(bool("Hello world"))
+
+# While loops
+counter = 0
+while counter < 3:
+    print("Something")
+    counter += 1
+
+counter = 1
+while counter < 6:
+    print(counter)
+    counter += 1
+
+# Infinite loops
+counter = 1
+while counter < 9:
+    print(counter)
+    counter = counter + 1
+
+word= "house"
+for letter in word:
+    print(letter)
+
+# Range
+one_input = range(5)
+
+for num in one_input:
+    print(num)
+
+# Calling ranges
+two_inputs = range(5, 10)
+
+for num in two_inputs:
+    print(num)
+
+three_inputs = range(1, 20, 3)
+# first number/ last number/ interval
+for num in three_inputs:
+    print(num)
+# Range = one less than informed, if is 20 (for example), last number is 19.
+
+# String methods
+all_low = "there are no capitals here."
+print(all_low.upper())
+print(all_low)
+all_up = "THERE IS SHOUTING TEXT!"
+print(all_up.lower())
+print(all_up)
+
+print("Mixed Case".isupper())
+print("ALL CAPS".isupper())
+print("AAAHHHH!".islower())
+print("$100 is a lot to make in an hour.".islower())
+print("".isupper())
+print("37&8.,?:\"".islower())
+print("SHOUT!".lower().isupper())
+print("Batman123".isalnum())
+print("Batman".isalnum())
+print("123".isalnum())
+print("123".isdecimal())
+print("3.14".isdecimal())
+print(" ".isspace())
+print("                  ".isspace())
+print("not just spaces".isspace())
+print("not just spaces"[3].isspace())
+print("The Empire Strikes Back".istitle()) # Title case
+print("Super Smash Brothers: Ultimate!".istitle())
+print("the great gatsby".title()) # Convert
+print("this is a string".startswith("T"))
+print("To infinity and beyond!".endswith("!"))
+print("".join(["one", "two", "three"]))
+print(" ".join(["one", "two", "three"]))
+print(",".join(["one", "two", "three"]))
+print(", ".join(["one", "two", "three"]))
+print("...".join(["one", "two", "three"]))
+print("Eggs, Milk, Waffles, Bacon".split(","))
+
+print("hello world".rjust(15))
+print("hello world".ljust(15) + "four spaces later.")
+print("hello world".rjust(15, "-"))
+print("hello world".ljust(15, "*"))
+print('hello world'.center(15, ":"))
+print("I had an exciting trip!!!11111")
+print("I had an exciting trip!!!11111".strip("1"))
+print("I had an exciting trip!!!11111".rstrip("1"))
+print("I had an exciting trip!!!11111".lstrip("1"))
+print("juice, bread, cheese, beef, bread.".rstrip(",ed arb"))
+print("blueblueyellowblue".strip("eulb"))
+print("Good morning.".replace("morning", "afternoon"))
+
+# Len
+print(len("tree"))
+print("This" + " " + "is a " + "string.")
+print(len("This" + " " + "is a " + "string."))
+print("antidisestablishmentarianism"[7:20])
+print(len("antidisestablishmentarianism"[7:20]))
+
+# Format
+
+name = input("What is the job applicant's name? ")
+degree = input("What did they major in at college? ")
+job = input("What is their current occupation? ")
+experience = input("How many years have they been working in their field? ")
+
+print(name + " majored in " + degree + ", works as a " + job + ", and has " + experience + " years of experience.")
+
+# {} substitute of variables
+print("{} majored in {}, works as a {}, and has {} years of experience.".format(name, degree, job, experience))
