@@ -459,7 +459,7 @@ print("antidisestablishmentarianism"[7:20])
 print(len("antidisestablishmentarianism"[7:20]))
 
 # Format
-
+"""
 name = input("What is the job applicant's name? ")
 degree = input("What did they major in at college? ")
 job = input("What is their current occupation? ")
@@ -469,3 +469,255 @@ print(name + " majored in " + degree + ", works as a " + job + ", and has " + ex
 
 # {} substitute of variables
 print("{} majored in {}, works as a {}, and has {} years of experience.".format(name, degree, job, experience))
+"""
+# List
+example_list_1 = [5, 4, 3, 2, 1]
+example_list_2 = [2.718, 9.31]
+example_list_3 = ["blue","green","red","yellow","purple","orange"]
+example_list_4 = [True, False, False, True, False, True, True, False, True]
+example_list_5 = [[1,2,3],[4,5],[6,7,8,9]]
+example_list_6 = [10,3.14159,"tree",False,[1,2,3]]
+
+print(list("blah"))
+checked_list = [1,2,3,4]
+not_in_example = 3 not in checked_list
+print(not_in_example)
+
+# index and list
+indexes_example = ["carpet", "hardwood", "linoleum"]
+print(indexes_example[2][0])
+indexes_example2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(indexes_example2[2][0]) # it's third list, position zero
+
+negative = [1, 2, 3, 4, 5]
+print(negative[-1])
+print(negative[-2])
+print(negative[-3])
+print(negative[-4])
+print(negative[-5])
+
+mixed = [False, 365, 4.24, "this is a string"]
+print(mixed[2] + 1.76)
+print("I have used \"" + mixed[-1] + "\" as an example too many times.")
+
+# list slicing
+sliced = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(sliced[:4])
+print(sliced[3:8])
+print(sliced[6:])
+
+example = [2, 4, 6, 8, 0]
+print(example)
+example[3] = 10
+print(example)
+example[4:7] = [7, 6, 5]
+print(example)
+
+# del and list
+planets = ["pluto", "mars", "earth", "venus"]
+del planets[0]
+print(planets)
+planets.remove("mars")
+print(planets)
+colors = ["blue","red","white","blue","orange","blue"]
+colors.remove("blue")
+print(colors)
+pets = ["cat","dog","parrot"]
+print(pets)
+pets.append("fish")
+print(pets)
+pets.insert(1,"turtle") # insert in specific position
+print(pets)
+num_list = [2.718, 4, -19, 10000, 0]
+print(num_list)
+num_list.sort()
+print(num_list) # random position
+str_list = ["Ringo", "John", "George", "Paul"]
+print(str_list)
+str_list.sort()
+print(str_list)
+num_list.sort(reverse=True)
+print(num_list)
+str_list.sort(reverse=True)
+print(str_list)
+mixed = [False, 5.67, -2]
+mixed.sort()
+print(mixed)
+#ASCIIbetical order
+ASCIIbetical = ["Andy", "kiwi", "apple", "Karen", "Brian", "banana"]
+ASCIIbetical.sort(key=str.lower) # In orders typed
+print(ASCIIbetical)
+metals = ["cooper", "gold", "silver", "iron"]
+print(metals.index("silver"))
+numbers = [4, 3, 2, 1, 0, 1, 2, 3, 4]
+print(numbers.index(3))
+bands = ["Queen", "Led Zeppelin", "The Beatles", "MUSE", "Radiohead"]
+end = bands.pop(3)
+print(bands)
+print(end)
+
+# Lists and strings
+ex_1 = [1, 2, 3]
+ex_1[1] = 5 # reassignment
+print(ex_1)
+ex_2 = "123"
+# ex_2[1] = 5
+print(ex_2)
+
+ex_3 = "No, you can't."
+ex_4 = "Yes" + ex_3[3:11] + "!"
+print(ex_4)
+ex_5 = 3.14
+ex_6 = "coconut"
+ex_7 = ex_5
+ex_8 = ex_6
+print(ex_7)
+print(ex_8)
+ex_9 = [1, 2, 3, 4, 5]
+ex_10 = ex_9
+ex_10[2] = 4
+print(ex_9)
+print(ex_10)
+# copy and deepcopy
+import copy
+ex_12 = [1, 2, 3, 4, 5]
+ex_13 = copy.deepcopy(ex_12)
+ex_13[2] = 4
+ex_14 = ex_13
+ex_14[4] = 6
+print(ex_12)
+print(ex_13)
+ex_15 = ["bush",
+         "fern",
+         "tree",
+         "moss"]
+print(ex_15)
+ex_16 = 2 + \
+        4 + \
+        1
+print(ex_16)
+
+ex_17 = "The Emp\
+ire Strikes\
+ Back"
+print(ex_17)
+
+ex_18 = "hello " + \
+        "world"
+print(ex_18)
+
+# dictionaries
+consoles = {"nintendo": "wii", "microsoft": "xbox", "sony": "playstation"}
+print(consoles["microsoft"]) # key value
+val = consoles["microsoft"]
+print(val)
+print("The " + consoles["sony"] + " 5 is Sony's newest gaming console.")
+
+mohs_hardness = {9: "corondum", 10: "diamond"}
+floats = {1.23: 1000, 3.14159: 10000, 2.718: 100000}
+mixed = {"string":1, 10210: 2, 4.976: 3, False: 4}
+
+print([2, 4, 6] == [2, 4, 6])
+print([2, 4, 6] == [6, 4, 2])
+
+first = {0: 2.1, 1: 2.2, 2: 2.3, 3: 2.4}
+second = {2: 2.3, 0: 2.1, 3: 2.4, 1: 2.2}
+print(first == second)
+print(0 in first)
+print(1 not in first)
+
+birth_years = {1994: "bill", 1969: "emily", 1982: "elizabeth", 2000: "turner"}
+print(birth_years.keys())
+for key in birth_years.keys():
+    print(key)
+
+print(birth_years.values())
+for key in birth_years.values():
+    print(key)
+
+print(birth_years.items())
+for key, value in birth_years.items():
+    print(key, value)
+
+print(type(birth_years.keys()))
+print(type(birth_years.values()))
+print(type(birth_years.items()))
+
+print(list(birth_years.keys()))
+print(list(birth_years.values()))
+print(list(birth_years.items()))
+
+print("elizabeth" in birth_years.values())
+
+if 1975 in birth_years:
+    print(birth_years[1975])
+else:
+    print("1975 is not a key in birth_years.")
+
+print(birth_years.get(1975, "1975 is not a key in birth_years."))
+
+print(birth_years)
+people = birth_years
+people[1982] = "madeline"
+print(birth_years)
+
+birth_years = {1994: "bill",
+               1969: "emily",
+               1982: "elizabeth",
+               2000: "turner"}
+print(len(birth_years))
+
+ex_1 = {}.fromkeys(["address"], "1600 Pennsylvania Avenue NW")
+print(ex_1)
+ex_1 = {}.fromkeys("addr", "1600 Pennsylvania Avenue NW") # two keys
+print(ex_1)
+ex_1 = {}.fromkeys(["brand"])
+print(ex_1)
+ex_2 = {"make": "Honda", "model": "civic", "year": 2016}
+popped = ex_2.pop("model")
+print(ex_2)
+print(popped)
+popped = ex_2.pop("make")
+print(ex_2)
+print(popped)
+
+ex_3 = {"name": "bob", "age": 38, "occupation": "accountant", "workplace": "H&R block"}
+# ex_3.popitem("bob")
+print(ex_3)
+
+ex_1 = {1: "England", 2: "Scotland", 3: "Wales", 4: "Northern Ireland"}
+print(ex_1)
+ex_1.clear()
+print(ex_1)
+
+print(birth_years)
+people = birth_years
+people[1982] = "madeline"
+print(birth_years)
+
+city_info = {"country": "Canada", "province": "Ontario", "city": "Toronto"}
+population = {"population": 2930000}
+city_info.update(population)
+print(city_info)
+print(population)
+city_info["population"] = 3000000
+print(city_info)
+city_info.update(population)
+print(city_info)
+
+computers = {"Google": "ChromeBook", "Apple": "MacBook", "Microsoft": "Surface Pro"}
+if "Lenovo" not in computers:
+    computers["Lenovo"] = "ThinkPad"
+print(computers)
+
+computers.setdefault("Lenovo", "ThinkPad")
+print(computers)
+computers.setdefault("Lenovo", "IdeaPad")
+print(computers)
+computers.setdefault("Apple", "MacBook Pro")
+print(computers)
+
+empty = dict()
+print(empty)
+with_values = dict(a=1, b=2, c=3)
+print(with_values)

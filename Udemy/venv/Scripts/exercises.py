@@ -252,3 +252,74 @@ number_of_words = len(words)
 
 print(words)
 print(number_of_words)
+
+# List exercises
+ex_list_1 = [1,3.14159,True,"text",[3,9,7]]
+print(ex_list_1)
+call_list = ex_list_1
+verify_list = "e" in call_list
+verify_list2 = "a" not in call_list
+print(verify_list, verify_list2)
+
+# indexes and list slicing
+up_by_two = [[0,2],[4,6],[8,10],[12,14]]
+print(up_by_two[0])
+print(up_by_two[3][1])
+furniture = ["chair", "table", "desk", "lamp", "bed"]
+print(furniture[-5])
+print("Most people own at least " + str(up_by_two[0][1]) + "" + furniture[0] + "s.")
+floats = [0.98, 8.76, 6.54, 4.32]
+print(floats[1:])
+print(floats[1:3])
+print(floats[:2])
+
+# del and list
+arctic_animals = ["penguin", "elephant", "polar bear", "walrus", "tiger", "reindeer"]
+del arctic_animals[4]
+arctic_animals.remove("elephant")
+arctic_animals.append("arctic fox")
+arctic_animals.insert(2, "snowy owl")
+arctic_animals.sort()
+print(arctic_animals)
+print(arctic_animals.index("reindeer"))
+print(arctic_animals.pop())
+
+# dictionaries
+dictionary = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}
+print(dictionary["c"])
+print("a" in dictionary)
+print("b" not in dictionary)
+
+# dictionary
+famous_songs = {"Queen": "Bohemian Rhapsody",
+                "Bee Gees": "Stayin' Alive",
+                "U2": "One",
+                "Michael Jackson": "Billie Jean",
+                "The Beatles": "Hey Jude",
+                "Bob Dylan": "Like a Rolling Stone"}
+print(len(famous_songs))
+for key in famous_songs.keys():
+    print(key)
+print(famous_songs.values())
+for key, value in famous_songs.items():
+    print(key, value)
+print(famous_songs.get("Promise of the Real", "That is not a key that appears in the dictionary."))
+
+# Dictionary methods
+for key, value in {}.fromkeys("bcdfghjklmnpqrstvwxyz", "consonant").items():
+    print(key, value)
+
+fast_food_items = {"McDonald's": "Big Mac", "Burger King": "Whopper", "Chick-fil-A": "Original Chicken Sandwich"}
+print(fast_food_items.pop("McDonald's"))
+
+fast_food_items.popitem()
+print(fast_food_items)
+
+# Dictionary methods
+internet_celebrities = {"DrDisrespect": "YouTube", "Zlaner": "Facebook", "Ninja": "Mixer"}
+another_one = {"shroud": "Twitch"}
+internet_celebrities.update(another_one)
+gamers = internet_celebrities.copy()
+internet_celebrities.clear()
+print(internet_celebrities)
+print(gamers)
