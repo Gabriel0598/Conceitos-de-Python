@@ -1,3 +1,4 @@
 .idea/
-Udemy/venv/Scripts/.idea/
-Udemy/venv/Scripts/chave.key
+src/Udemy/venv/Scripts/.idea/
+src/Udemy/venv/Scripts/chave.key
+__init__.py
