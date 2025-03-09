@@ -1,3 +1,5 @@
+import math
+
 # Assertion introduce
 # May success
 number = 42
@@ -104,3 +106,16 @@ test_isinstance()
 test_all()
 test_any()
 test_always_fail()
+
+class Circle:
+    def __init__(self, radius):
+        if radius < 0:
+            raise ValueError("Positive radius expected")
+        self.radius = radius
+
+    def area(self):
+        assert self.radius >= 0, "positive radius expected"
+        return math.pi * self.radius ** 2
+
+    def correct_radius(self, correction_coefficient):
+        self.radius *= correction_coefficient
