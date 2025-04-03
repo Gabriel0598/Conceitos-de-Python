@@ -1,4 +1,5 @@
 # Python Design Patterns Tutorial
+[GeeksForGeeks Tutorial](https://www.geeksforgeeks.org/python-design-patterns/>)
 
 Design patterns in Python are communicating objects and classes that are customized to solve a general design problem in a particular context. Software design patterns are general, reusable solutions to common problems that arise during the design and development of software. They represent best practices for solving certain types of problems and provide a way for developers to communicate about effective design solutions.
 
