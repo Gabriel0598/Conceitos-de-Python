@@ -1,4 +1,9 @@
+.gitignore
 .idea/
 src/Udemy/venv/Scripts/.idea/
 src/Udemy/venv/Scripts/chave.key
 __init__.py
+src/Tests/app/__pycache__/
+src/Tests/tests/
+src/__pycache__/
+.vscode/
