@@ -1,4 +1,8 @@
+__init__.py
 .idea/
+.vscode/
+src/__pycache__/
 src/Udemy/venv/Scripts/.idea/
 src/Udemy/venv/Scripts/chave.key
-__init__.py
+src/Tests/app/__pycache__/
+src/Tests/tests/__pycache__/
